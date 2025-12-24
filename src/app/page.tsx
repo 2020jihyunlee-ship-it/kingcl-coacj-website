@@ -6,6 +6,7 @@ export default function Home() {
     <main className={styles.main}>
       {/* Navigation */}
       <nav className={styles.nav}>
+        <div style={{ background: 'red', color: 'white', textAlign: 'center', fontSize: '10px' }}>VER: 20:30 DEBUG</div>
         <div className={`container ${styles.navContainer}`}>
           <Link href="/" className={styles.logo}>
             <img src="/logo.png" alt="Logo" className={styles.logoImg} />
