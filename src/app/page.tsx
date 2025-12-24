@@ -409,7 +409,7 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className={`section ${styles.contact}`}>
         <div className="container">
-          <div className={`${styles.contactCard} reveal`} style={{ border: '2px solid var(--color-gold)' }}>
+          <div className={`${styles.contactCard} reveal`}>
             <h2>함께 성장을 설계하세요</h2>
             <p>AI 시대에 맞는 맞춤형 코칭, 강연, 컨설팅을 제공합니다</p>
 
