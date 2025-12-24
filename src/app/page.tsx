@@ -75,8 +75,8 @@ export default function Home() {
           <div className={styles.heroVisual}>
             <div className={styles.heroImageWrapper}>
               <div className={styles.heroImageGlow}></div>
-              <div className={styles.heroImagePlaceholder}>
-                <span>👤</span>
+              <div className={styles.heroImageContainer}>
+                <img src="/profile.png" alt="킹클코치 이지현" className={styles.heroImage} />
               </div>
             </div>
 
