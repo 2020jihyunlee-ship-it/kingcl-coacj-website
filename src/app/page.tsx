@@ -123,7 +123,7 @@ export default function Home() {
           <div className={styles.aboutContent}>
             <div className={styles.aboutText}>
               <p className={styles.aboutLead}>
-                &ldquo;성공은 재능이 아니라, <strong className="text-gold">마음과 전략</strong>의 문제입니다.&rdquo;
+                &ldquo;성공은 재능이 아니라, <strong className="text-gold">명확한 목표와 전략, 마인드</strong>의 문제입니다.&rdquo;
               </p>
 
               <p>
@@ -132,14 +132,14 @@ export default function Home() {
               </p>
 
               <p>
-                AI 시대가 도래하면서 교육의 패러다임이 완전히 바뀌고 있습니다.
-                이제 단순히 지식을 암기하는 것이 아니라, <strong>어떻게 배우고 어떻게 성장할 것인가</strong>가
-                핵심이 되었습니다.
+                AI 시대가 도래하면서 교육의 패러다임은 완전히 바뀌고 있습니다.
+                이제 중요한 것은 무엇을 아느냐가 아니라,
+                <strong>어떻게 배우고 어떻게 성장할 것인가</strong>입니다.
               </p>
 
               <p>
-                킹클은 <strong>&ldquo;King of Class&rdquo;</strong>의 줄임말로,
-                모든 사람이 자신만의 영역에서 왕이 될 수 있다는 철학을 담고 있습니다.
+                킹클은 모든 사람이 자신만의 방식으로 배우고 성장하며,
+                <strong>스스로의 삶을 설계할 수 있다</strong>고 믿습니다.
               </p>
             </div>
 
