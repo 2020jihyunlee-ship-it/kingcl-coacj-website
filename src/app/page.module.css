@@ -221,12 +221,14 @@
   height: 100%;
   object-fit: cover;
   object-position: center 15%;
-  /* 얼굴 위치에 맞춰 상단으로 조정 */
+  transform: scaleX(-1);
+  /* 좌우 반전 */
   transition: transform var(--transition-slow);
 }
 
 .heroImageContainer:hover .heroImage {
-  transform: scale(1.05);
+  transform: scaleX(-1) scale(1.05);
+  /* 반전 상태 유지하며 확대 */
 }
 
 
