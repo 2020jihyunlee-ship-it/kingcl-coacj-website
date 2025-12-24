@@ -372,8 +372,8 @@ export default function Home() {
 
             <div className={styles.contactCta}>
               <p>강연 및 컨설팅 문의</p>
-              <a href="https://kingclcoach.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                kingclcoach.com
+              <a href="mailto:hyun7578@naver.com" className="btn btn-primary">
+                hyun7578@naver.com
               </a>
             </div>
           </div>
