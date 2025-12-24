@@ -98,45 +98,56 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-base);
   line-height: 1.8;
-  /* 행간 확장 */
   color: var(--color-text-primary);
-  background: var(--color-bg-primary);
+  background: #050508;
+  /* 깊이감 있는 블랙네이비 */
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   letter-spacing: -0.01em;
-  /* 기본 자간 정밀 조정 */
 }
 
-/* Background Effect - 고도화(4번 제안 베이스) */
+/* Background Effect 1: Aurora Mesh Gradients (4번 제안 고도화) */
 body::before {
   content: '';
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background:
-    radial-gradient(circle at 20% 20%, rgba(79, 140, 255, 0.15), transparent 40%),
-    radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1), transparent 40%),
-    radial-gradient(circle at 50% 50%, rgba(0, 217, 255, 0.05), transparent 60%);
-  pointer-events: none;
-  z-index: -1;
+    radial-gradient(circle at 20% 30%, rgba(79, 140, 255, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+  filter: blur(80px);
+  z-index: -2;
+  animation: aurora-shift 20s ease-in-out infinite alternate;
 }
 
-/* Subtle Grid Pattern */
+@keyframes aurora-shift {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-2%, 2%) scale(1.1);
+  }
+
+  100% {
+    transform: translate(2%, -2%) scale(1);
+  }
+}
+
+/* Background Effect 2: Film Grain & Mesh (고급 질감) */
 body::after {
   content: '';
   position: fixed;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 50px 50px;
+  /* SVG Noise Filter를 활용한 그레인 질감 */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  /* 매우 은은하게 */
+  mix-blend-mode: overlay;
   pointer-events: none;
   z-index: -1;
-  mask-image: radial-gradient(circle at center, black, transparent 80%);
 }
 
 a {

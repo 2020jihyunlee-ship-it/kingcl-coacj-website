@@ -303,7 +303,19 @@
 
 /* ===== About Section ===== */
 .about {
-  background: var(--color-bg-secondary);
+  background: transparent;
+  /* 전역 오로라 배경이 비치도록 투명화 */
+  position: relative;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
 }
 
 .aboutContent {
@@ -463,7 +475,18 @@
 
 /* ===== Achievements Section ===== */
 .achievements {
-  background: var(--color-bg-secondary);
+  background: transparent;
+  position: relative;
+}
+
+.achievements::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(79, 140, 255, 0.15), transparent);
 }
 
 .achievementsContent {
@@ -620,7 +643,18 @@
 
 /* ===== Contact Section ===== */
 .contact {
-  background: var(--color-bg-primary);
+  background: transparent;
+  position: relative;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.15), transparent);
 }
 
 .contactCard {
