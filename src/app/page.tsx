@@ -144,10 +144,10 @@ export default function Home() {
             </div>
 
             <div className={styles.aboutCards}>
-              <div className={`card ${styles.aboutCard}`}>
+              <div className={`${styles.aboutCard} ${styles.visionCard}`}>
                 <div className={styles.aboutCardIcon}>🎯</div>
-                <h4>비전</h4>
-                <p>AI 시대에 맞는 새로운 교육 방법론으로 모든 이의 성장을 돕습니다</p>
+                <h4>Vision</h4>
+                <p>AI 시대에 맞는 새로운 교육 방법론으로<br />모든 이의 성장을 돕습니다</p>
               </div>
 
               <div className={`card ${styles.aboutCard}`}>
