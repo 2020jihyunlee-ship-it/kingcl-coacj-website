@@ -293,41 +293,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* More Videos */}
-          <div className={styles.mediaGrid}>
-            <a href="https://www.youtube.com/watch?v=lrhgRmVLr7w" target="_blank" rel="noopener noreferrer" className={styles.mediaCard}>
-              <div className={styles.mediaThumbnail}>
-                <div className={styles.mediaPlay}>▶</div>
-                <span>7:23</span>
-              </div>
-              <div className={styles.mediaInfo}>
-                <h4>지식이 사라지는 시대, 무엇을 배워야 살아남는가?</h4>
-                <p>2025.11.16</p>
-              </div>
-            </a>
-
-            <a href="https://www.youtube.com/watch?v=4ZALaSQJ2i4" target="_blank" rel="noopener noreferrer" className={styles.mediaCard}>
-              <div className={styles.mediaThumbnail}>
-                <div className={styles.mediaPlay}>▶</div>
-                <span>7:24</span>
-              </div>
-              <div className={styles.mediaInfo}>
-                <h4>교육부 &lsquo;AI 대전환&rsquo; 핵심 전략</h4>
-                <p>2025.11.13</p>
-              </div>
-            </a>
-
-            <a href="https://www.youtube.com/watch?v=DIKtl4sj_dY" target="_blank" rel="noopener noreferrer" className={styles.mediaCard}>
-              <div className={styles.mediaThumbnail}>
-                <div className={styles.mediaPlay}>▶</div>
-                <span>13:40</span>
-              </div>
-              <div className={styles.mediaInfo}>
-                <h4>입시코디네이터, 그리고 성장 코치 | 티처스2 비하인드</h4>
-                <p>2025.10.20</p>
-              </div>
-            </a>
-          </div>
+          {/* More Videos Button */}
 
           <div className={styles.mediaMore}>
             <a href="https://www.youtube.com/channel/UC-aQ-8GKrNBHcdsFA3d-aZg" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
