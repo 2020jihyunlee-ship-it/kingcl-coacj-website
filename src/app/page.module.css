@@ -8,7 +8,7 @@
   padding: var(--space-md) 0;
   background: rgba(5, 5, 8, 0.8);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 2px solid var(--color-gold);
 }
 
 .navContainer {
@@ -54,7 +54,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding-top: 180px;
+  padding-top: 220px;
   overflow: hidden;
 }
 
