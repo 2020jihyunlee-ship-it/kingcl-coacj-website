@@ -139,10 +139,13 @@
 }
 
 .heroDescription {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   color: var(--color-text-secondary);
   line-height: 1.8;
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-3xl);
+  max-width: 600px;
+  /* 라인 길이를 조절해 가독성 확보 */
+  letter-spacing: -0.01em;
 }
 
 .heroDescription strong {
@@ -152,9 +155,11 @@
 .heroStats {
   display: flex;
   align-items: center;
-  gap: var(--space-xl);
-  margin-bottom: var(--space-2xl);
-  padding: var(--space-lg) 0;
+  gap: var(--space-2xl);
+  /* 간격 넓힘 */
+  margin-bottom: var(--space-4xl);
+  /* 하단 여백 확대 */
+  padding: var(--space-2xl) 0;
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
@@ -191,18 +196,19 @@
 
 .heroImageWrapper {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 420px;
+  /* 크기 확대 */
+  height: 420px;
 }
 
 .heroImageGlow {
   position: absolute;
-  inset: -20px;
-  background: var(--gradient-hero);
+  inset: -40px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.2), rgba(79, 140, 255, 0.1), transparent 70%);
   border-radius: 50%;
-  opacity: 0.3;
-  filter: blur(40px);
-  animation: pulse 4s ease-in-out infinite;
+  opacity: 0.6;
+  filter: blur(60px);
+  animation: pulse 6s ease-in-out infinite;
 }
 
 .heroImageContainer {
@@ -316,12 +322,15 @@
   margin-bottom: var(--space-lg);
 }
 
-.aboutLead {
-  font-size: var(--font-size-2xl);
-  font-weight: 600;
-  color: var(--color-text-primary);
-  margin-bottom: var(--space-xl) !important;
-  line-height: 1.5;
+.heroStat span:first-child {
+  font-size: var(--font-size-5xl);
+  /* 크기 대폭 상향 */
+  font-weight: 800;
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
 }
 
 .aboutCards {
@@ -398,7 +407,13 @@
 
 .expertiseIcon {
   font-size: 3rem;
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  display: inline-block;
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
 }
 
 .expertiseCard h3 {
