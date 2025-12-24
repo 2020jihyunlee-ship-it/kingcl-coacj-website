@@ -8,7 +8,7 @@ export default function Home() {
       <nav className={styles.nav}>
         <div className={`container ${styles.navContainer}`}>
           <Link href="/" className={styles.logo}>
-            <span className={styles.logoIcon}>👑</span>
+            <img src="/logo.png" alt="킹클코치 로고" className={styles.logoImg} />
             <span>킹클코치</span>
           </Link>
           <div className={styles.navLinks}>
@@ -41,7 +41,7 @@ export default function Home() {
             </h1>
 
             <p className={styles.heroDescription}>
-              24년간 <strong>16만 회</strong>의 코칭 경험으로<br />
+              24년간 <strong>20만 회</strong>의 코칭 경험으로<br />
               AI 시대에 맞는 <strong>자기주도학습</strong>과 <strong>진로 설계</strong>를 이끕니다
             </p>
 
@@ -52,12 +52,12 @@ export default function Home() {
               </div>
               <div className={styles.statDivider}></div>
               <div className={styles.heroStat}>
-                <span className="stat-number">16만+</span>
+                <span className="stat-number">20만+</span>
                 <span>코칭 횟수</span>
               </div>
               <div className={styles.statDivider}></div>
               <div className={styles.heroStat}>
-                <span className="stat-number">12</span>
+                <span className="stat-number">13</span>
                 <span>권 저서</span>
               </div>
             </div>
@@ -240,7 +240,7 @@ export default function Home() {
                 <ul>
                   <li>&ldquo;언락킹드림&rdquo; (2023)</li>
                   <li>&ldquo;생각 디톡스 진로 디톡스 학습 디톡스&rdquo; (2023)</li>
-                  <li>외 10권</li>
+                  <li>외 11권</li>
                 </ul>
               </div>
 
@@ -273,18 +273,28 @@ export default function Home() {
             최신 영상
           </h2>
 
-          <div className={styles.mediaGrid}>
-            <a href="https://www.youtube.com/watch?v=_VUg5mdUYHI" target="_blank" rel="noopener noreferrer" className={styles.mediaCard}>
-              <div className={styles.mediaThumbnail}>
-                <div className={styles.mediaPlay}>▶</div>
-                <span>5:08</span>
-              </div>
-              <div className={styles.mediaInfo}>
-                <h4>AI 시대, 우리는 어떻게 배워야 할까요?</h4>
-                <p>2025.12.12</p>
-              </div>
-            </a>
+          {/* Featured Video - 메인 임베드 */}
+          <div className={styles.featuredVideo}>
+            <div className={styles.videoWrapper}>
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/_VUg5mdUYHI?si=RZQiWe50ejvmzSws"
+                title="AI 시대, 우리는 어떻게 배워야 할까요?"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+            <div className={styles.featuredVideoInfo}>
+              <h3>AI 시대, 우리는 어떻게 배워야 할까요?</h3>
+              <p>요즘 많은 분들이 공부를 하고는 있는데, 이게 지금 시대에 맞는 방향인지 모르겠다는 혼란을 느낍니다. AI가 너무 빨리 발전하다 보니 무엇을 우선으로 배워야 할지 기준이 흐려졌다는 느낌...</p>
+            </div>
+          </div>
 
+          {/* More Videos */}
+          <div className={styles.mediaGrid}>
             <a href="https://www.youtube.com/watch?v=lrhgRmVLr7w" target="_blank" rel="noopener noreferrer" className={styles.mediaCard}>
               <div className={styles.mediaThumbnail}>
                 <div className={styles.mediaPlay}>▶</div>
@@ -304,6 +314,17 @@ export default function Home() {
               <div className={styles.mediaInfo}>
                 <h4>교육부 &lsquo;AI 대전환&rsquo; 핵심 전략</h4>
                 <p>2025.11.13</p>
+              </div>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=DIKtl4sj_dY" target="_blank" rel="noopener noreferrer" className={styles.mediaCard}>
+              <div className={styles.mediaThumbnail}>
+                <div className={styles.mediaPlay}>▶</div>
+                <span>13:40</span>
+              </div>
+              <div className={styles.mediaInfo}>
+                <h4>입시코디네이터, 그리고 성장 코치 | 티처스2 비하인드</h4>
+                <p>2025.10.20</p>
               </div>
             </a>
           </div>
@@ -364,7 +385,8 @@ export default function Home() {
         <div className="container">
           <div className={styles.footerContent}>
             <div className={styles.footerLogo}>
-              <span>👑</span> 킹클코치 이지현
+              <img src="/logo.png" alt="킹클코치 로고" className={styles.footerLogoImg} />
+              <span>킹클코치 이지현</span>
             </div>
             <p>© 2024 KINGCL. All rights reserved.</p>
           </div>
