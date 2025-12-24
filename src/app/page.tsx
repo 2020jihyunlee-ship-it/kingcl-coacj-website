@@ -240,24 +240,24 @@ export default function Home() {
                 <ul>
                   <li>&ldquo;언락킹드림&rdquo; (2023)</li>
                   <li>&ldquo;생각 디톡스 진로 디톡스 학습 디톡스&rdquo; (2023)</li>
-                  <li>외 11권</li>
+                  <li>외 11권 (총 13권)</li>
                 </ul>
               </div>
 
               <div className={styles.achievementCategory}>
                 <h3>🎓 학력 및 자격</h3>
                 <ul>
-                  <li>연세대학교 교육대학원 평생교육경영</li>
-                  <li>청소년 교육·상담 24년 경력</li>
+                  <li>청소년 교육컨설팅, 상담코칭 20년</li>
                 </ul>
               </div>
 
               <div className={styles.achievementCategory}>
                 <h3>🏢 현재 활동</h3>
                 <ul>
-                  <li>AI 맞춤형 코칭기업 킹클(KINGCL) 대표</li>
+                  <li>AI 코칭기업 킹클(KINGCL) 대표</li>
                   <li>킹클코치TV 유튜브 채널 운영</li>
-                  <li>킹클이브닝 청소년 코칭 프로그램</li>
+                  <li>AI기반 자기주도학습 및 진로 청소년 코칭</li>
+                  <li>부모와 교사 등 AI활용 교육 강의 및 코칭</li>
                 </ul>
               </div>
             </div>
