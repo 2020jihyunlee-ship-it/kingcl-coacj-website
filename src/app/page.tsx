@@ -41,13 +41,13 @@ export default function Home() {
             </h1>
 
             <p className={styles.heroDescription}>
-              24년간 <strong>20만 회</strong>의 코칭 경험으로<br />
+              20년간 <strong>20만 회</strong>의 코칭 경험으로<br />
               AI 시대에 맞는 <strong>자기주도학습</strong>과 <strong>진로 설계</strong>를 이끕니다
             </p>
 
             <div className={styles.heroStats}>
               <div className={styles.heroStat}>
-                <span className="stat-number">24</span>
+                <span className="stat-number">20</span>
                 <span>년 경력</span>
               </div>
               <div className={styles.statDivider}></div>
