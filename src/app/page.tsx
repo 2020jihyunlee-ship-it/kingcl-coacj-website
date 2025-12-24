@@ -9,7 +9,6 @@ export default function Home() {
         <div className={`container ${styles.navContainer}`}>
           <Link href="/" className={styles.logo}>
             <img src="/logo.png" alt="킹클코치 로고" className={styles.logoImg} />
-            <span>킹클코치</span>
           </Link>
           <div className={styles.navLinks}>
             <a href="#about">소개</a>
@@ -353,7 +352,6 @@ export default function Home() {
           <div className={styles.footerContent}>
             <div className={styles.footerLogo}>
               <img src="/logo.png" alt="킹클코치 로고" className={styles.footerLogoImg} />
-              <span>킹클코치 이지현</span>
             </div>
             <p>© 2024 KINGCL. All rights reserved.</p>
           </div>
