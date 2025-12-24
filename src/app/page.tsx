@@ -8,7 +8,7 @@ export default function Home() {
       <nav className={styles.nav}>
         <div className={`container ${styles.navContainer}`}>
           <Link href="/" className={styles.logo}>
-            <img src="/logo.png" alt="킹클코치 로고" className={styles.logoImg} />
+            <img src="/logo.png" alt="Logo" className={styles.logoImg} />
           </Link>
           <div className={styles.navLinks}>
             <a href="#about">소개</a>
@@ -36,7 +36,7 @@ export default function Home() {
 
             <h1 className={styles.heroTitle}>
               <span className={styles.heroSubtitle}>AI 맞춤형 코칭 전문가</span>
-              킹클코치 <span className="text-gradient">이지현</span>
+              <span className="text-gradient">이지현</span>
             </h1>
 
             <p className={styles.heroDescription}>
