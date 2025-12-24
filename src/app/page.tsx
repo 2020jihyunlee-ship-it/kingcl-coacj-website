@@ -422,14 +422,6 @@ export default function Home() {
                 </div>
               </a>
 
-              <a href="https://www.youtube.com/channel/UC-aQ-8GKrNBHcdsFA3d-aZg" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
-                <span>▶️</span>
-                <div>
-                  <strong>유튜브</strong>
-                  <span>킹클코치TV</span>
-                </div>
-              </a>
-
               <a href="https://cafe.naver.com/youthhappyvirus" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
                 <span>☕</span>
                 <div>
