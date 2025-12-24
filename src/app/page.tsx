@@ -104,7 +104,7 @@ export default function Home() {
         <div className={`container ${styles.heroContainer}`}>
           <div className={styles.heroContent}>
             <div className={`${styles.heroBadge} reveal`}>
-              <span>✨</span> AI 시대의 교육 혁신가 (VER 20:48)
+              <span>✨</span> AI 시대의 교육 혁신가
             </div>
 
             <h1 className={`${styles.heroTitle} reveal`}>
