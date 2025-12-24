@@ -240,13 +240,14 @@ export default function Home() {
                 <ul>
                   <li>&ldquo;언락킹드림&rdquo; (2023)</li>
                   <li>&ldquo;생각 디톡스 진로 디톡스 학습 디톡스&rdquo; (2023)</li>
-                  <li>외 11권 (총 13권)</li>
+                  <li>외 13권</li>
                 </ul>
               </div>
 
               <div className={styles.achievementCategory}>
                 <h3>🎓 학력 및 자격</h3>
                 <ul>
+                  <li>연세대학교 교육대학원 평생교육경영</li>
                   <li>청소년 교육컨설팅, 상담코칭 20년</li>
                 </ul>
               </div>
