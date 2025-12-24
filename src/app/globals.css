@@ -207,7 +207,6 @@ h6 {
   font-weight: 600;
   border-radius: var(--radius-full);
   transition: all var(--transition-normal);
-  text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
