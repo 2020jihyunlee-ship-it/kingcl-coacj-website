@@ -6,7 +6,6 @@ export default function Home() {
     <main className={styles.main}>
       {/* Navigation */}
       <nav className={styles.nav}>
-        <div style={{ background: 'red', color: 'white', textAlign: 'center', fontSize: '10px' }}>VER: 20:30 DEBUG</div>
         <div className={`container ${styles.navContainer}`}>
           <Link href="/" className={styles.logo}>
             <img src="/logo.png" alt="Logo" className={styles.logoImg} />
@@ -37,7 +36,7 @@ export default function Home() {
 
             <h1 className={styles.heroTitle}>
               <span className={styles.heroSubtitle}>AI 맞춤형 코칭 전문가</span>
-              <span className="text-gradient">이지현</span>
+              킹클코치 <span className="text-gradient">이지현</span>
             </h1>
 
             <p className={styles.heroDescription}>
