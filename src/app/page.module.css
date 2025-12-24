@@ -584,6 +584,15 @@
   transform: translateY(-4px);
 }
 
+.spotlight {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity var(--transition-normal);
+  background: transparent;
+}
+
 .mediaThumbnail {
   position: relative;
   aspect-ratio: 16/9;

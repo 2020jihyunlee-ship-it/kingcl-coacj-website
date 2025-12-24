@@ -1,9 +1,82 @@
+'use client'
+
+import React, { useEffect, useRef } from 'react'
 import styles from './page.module.css'
 import Link from 'next/link'
 
 export default function Home() {
+  const auraRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    // 1. Scroll Reveal (Intersection Observer)
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active')
+        }
+      })
+    }, observerOptions)
+
+    const revealElements = document.querySelectorAll('.reveal')
+    revealElements.forEach(el => observer.observe(el))
+
+    // 2. Mouse Aura
+    const handleMouseMove = (e: MouseEvent) => {
+      if (auraRef.current) {
+        // 부드러운 이동을 위해 requestAnimationFrame 고려 가능하나 일단 직접 대입
+        auraRef.current.style.left = `${e.clientX}px`
+        auraRef.current.style.top = `${e.clientY}px`
+      }
+    }
+
+    window.addEventListener('mousemove', handleMouseMove)
+
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('mousemove', handleMouseMove)
+    }
+  }, [])
+
+  // 3. Card Tilt Effect Handler (호이스팅 방지 및 성능을 위해 인라인 대신 함수 활용 가능)
+  const handleCardTilt = (e: React.MouseEvent<HTMLDivElement>) => {
+    const card = e.currentTarget
+    const rect = card.getBoundingClientRect()
+    const x = e.clientX - rect.left
+    const y = e.clientY - rect.top
+
+    const centerX = rect.width / 2
+    const centerY = rect.height / 2
+
+    const rotateX = (y - centerY) / 10
+    const rotateY = (centerX - x) / 10
+
+    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`
+
+    // Spotlight effect
+    const spotlight = card.querySelector(`.${styles.spotlight}`) as HTMLDivElement
+    if (spotlight) {
+      spotlight.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(212, 175, 55, 0.15) 0%, transparent 80%)`
+    }
+  }
+
+  const resetCardTilt = (e: React.MouseEvent<HTMLDivElement>) => {
+    const card = e.currentTarget
+    card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)'
+    const spotlight = card.querySelector(`.${styles.spotlight}`) as HTMLDivElement
+    if (spotlight) {
+      spotlight.style.background = 'transparent'
+    }
+  }
+
   return (
     <main className={styles.main}>
+      <div className="mouse-aura" ref={auraRef}></div>
+
       {/* Navigation */}
       <nav className={styles.nav}>
         <div className={`container ${styles.navContainer}`}>
@@ -30,21 +103,21 @@ export default function Home() {
 
         <div className={`container ${styles.heroContainer}`}>
           <div className={styles.heroContent}>
-            <div className={styles.heroBadge}>
+            <div className={`${styles.heroBadge} reveal`}>
               <span>✨</span> AI 시대의 교육 혁신가
             </div>
 
-            <h1 className={styles.heroTitle}>
+            <h1 className={`${styles.heroTitle} reveal`}>
               <span className={styles.heroSubtitle}>AI 맞춤형 코칭 전문가</span>
               킹클코치 <span className="text-gradient">이지현</span>
             </h1>
 
-            <p className={styles.heroDescription}>
+            <p className={`${styles.heroDescription} reveal`}>
               20년간 <strong>20만 회</strong>의 코칭 경험으로<br />
               AI 시대에 맞는 <strong>자기주도학습</strong>과 <strong>진로 설계</strong>를 이끕니다
             </p>
 
-            <div className={styles.heroStats}>
+            <div className={`${styles.heroStats} reveal`}>
               <div className={styles.heroStat}>
                 <span className="stat-number">20</span>
                 <span>년 경력</span>
@@ -61,7 +134,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className={styles.heroCta}>
+            <div className={`${styles.heroCta} reveal`}>
               <a href="#contact" className="btn btn-primary">
                 무료 상담 신청
               </a>
@@ -71,7 +144,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.heroVisual}>
+          <div className={`${styles.heroVisual} reveal`}>
             <div className={styles.heroImageWrapper}>
               <div className={styles.heroImageGlow}></div>
               <div className={styles.heroImageContainer}>
@@ -114,13 +187,13 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className={`section ${styles.about}`}>
         <div className="container">
-          <h2 className="section-title">
+          <h2 className="section-title reveal">
             <span>About</span>
             킹클코치를 소개합니다
           </h2>
 
           <div className={styles.aboutContent}>
-            <div className={styles.aboutText}>
+            <div className={`${styles.aboutText} reveal`}>
               <p className={styles.aboutLead}>
                 &ldquo;성공은 재능이 아니라, <strong className="text-gold">명확한 목표와 전략, 마인드</strong>의 문제입니다.&rdquo;
               </p>
@@ -143,13 +216,23 @@ export default function Home() {
             </div>
 
             <div className={styles.aboutCards}>
-              <div className={`${styles.aboutCard} ${styles.visionCard}`}>
+              <div
+                className={`${styles.aboutCard} ${styles.visionCard} reveal`}
+                onMouseMove={handleCardTilt}
+                onMouseLeave={resetCardTilt}
+              >
+                <div className={styles.spotlight}></div>
                 <div className={styles.aboutCardIcon}>🎯</div>
                 <h4>Vision</h4>
                 <p>AI 시대에 맞는 새로운 교육 방법론으로<br />모든 이의 성장을 돕습니다</p>
               </div>
 
-              <div className={`card ${styles.aboutCard}`}>
+              <div
+                className={`card ${styles.aboutCard} reveal`}
+                onMouseMove={handleCardTilt}
+                onMouseLeave={resetCardTilt}
+              >
+                <div className={styles.spotlight}></div>
                 <div className={styles.aboutCardIcon}>💡</div>
                 <h4>철학</h4>
                 <p>목표를 대신 정해주지 않는, 스스로 깨닫게 하는 코칭</p>
@@ -162,13 +245,18 @@ export default function Home() {
       {/* Expertise Section */}
       <section id="expertise" className={`section ${styles.expertise}`}>
         <div className="container">
-          <h2 className="section-title">
+          <h2 className="section-title reveal">
             <span>Expertise</span>
             전문 분야
           </h2>
 
           <div className={styles.expertiseGrid}>
-            <div className={`card ${styles.expertiseCard}`}>
+            <div
+              className={`card ${styles.expertiseCard} reveal`}
+              onMouseMove={handleCardTilt}
+              onMouseLeave={resetCardTilt}
+            >
+              <div className={styles.spotlight}></div>
               <div className={styles.expertiseIcon}>📚</div>
               <h3>자기주도학습 코칭</h3>
               <p>스스로 배우는 힘을 기르는 체계적인 학습 전략과 습관 설계</p>
@@ -179,7 +267,12 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className={`card ${styles.expertiseCard}`}>
+            <div
+              className={`card ${styles.expertiseCard} reveal`}
+              onMouseMove={handleCardTilt}
+              onMouseLeave={resetCardTilt}
+            >
+              <div className={styles.spotlight}></div>
               <div className={styles.expertiseIcon}>🧭</div>
               <h3>진로 설계 코칭</h3>
               <p>자신만의 강점을 발견하고 미래를 설계하는 진로 탐색</p>
@@ -190,7 +283,12 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className={`card ${styles.expertiseCard}`}>
+            <div
+              className={`card ${styles.expertiseCard} reveal`}
+              onMouseMove={handleCardTilt}
+              onMouseLeave={resetCardTilt}
+            >
+              <div className={styles.spotlight}></div>
               <div className={styles.expertiseIcon}>🧠</div>
               <h3>마인드셋 코칭</h3>
               <p>성장하는 마인드로 변화하는 사고방식 혁신</p>
@@ -201,7 +299,12 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className={`card ${styles.expertiseCard} ${styles.expertiseCardHighlight}`}>
+            <div
+              className={`card ${styles.expertiseCard} ${styles.expertiseCardHighlight} reveal`}
+              onMouseMove={handleCardTilt}
+              onMouseLeave={resetCardTilt}
+            >
+              <div className={styles.spotlight}></div>
               <div className={styles.expertiseIcon}>🤖</div>
               <h3>AI 코칭 리더십</h3>
               <p>AI 시대에 맞는 새로운 학습과 성장 전략</p>
@@ -219,13 +322,13 @@ export default function Home() {
       {/* Achievements Section */}
       <section id="achievements" className={`section ${styles.achievements}`}>
         <div className="container">
-          <h2 className="section-title">
+          <h2 className="section-title reveal">
             <span>Achievements</span>
             주요 활동 및 성과
           </h2>
 
           <div className={styles.achievementsTabs}>
-            <div className={styles.achievementsContent}>
+            <div className={`${styles.achievementsContent} reveal`}>
               <div className={styles.achievementCategory}>
                 <h3>📺 방송 출연</h3>
                 <ul>
@@ -268,13 +371,13 @@ export default function Home() {
       {/* Media Section */}
       <section id="media" className={`section ${styles.media}`}>
         <div className="container">
-          <h2 className="section-title">
+          <h2 className="section-title reveal">
             <span>Media</span>
             최신 영상
           </h2>
 
           {/* Featured Video - 메인 임베드 */}
-          <div className={styles.featuredVideo}>
+          <div className={`${styles.featuredVideo} reveal`}>
             <div className={styles.videoWrapper}>
               <iframe
                 width="100%"
@@ -295,7 +398,7 @@ export default function Home() {
 
           {/* More Videos Button */}
 
-          <div className={styles.mediaMore}>
+          <div className={`${styles.mediaMore} reveal`}>
             <a href="https://www.youtube.com/channel/UC-aQ-8GKrNBHcdsFA3d-aZg" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
               유튜브에서 더 보기 →
             </a>
@@ -306,7 +409,7 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className={`section ${styles.contact}`}>
         <div className="container">
-          <div className={styles.contactCard}>
+          <div className={`${styles.contactCard} reveal`}>
             <h2>함께 성장을 설계하세요</h2>
             <p>AI 시대에 맞는 맞춤형 코칭, 강연, 컨설팅을 제공합니다</p>
 
