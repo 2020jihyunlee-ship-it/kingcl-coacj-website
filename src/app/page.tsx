@@ -258,8 +258,8 @@ export default function Home() {
               <div className={styles.expertiseIcon}>🧭</div>
               <div className={styles.cardBadge}>STEP 1</div>
               <h3>AI 전환기 방향 설계</h3>
-              <p>성장 전략 진단</p>
               <ul>
+                <li>성장 전략 진단</li>
                 <li>커리어 재설계</li>
                 <li>성공 역량 정렬</li>
               </ul>
@@ -274,8 +274,8 @@ export default function Home() {
               <div className={styles.expertiseIcon}>🏗️</div>
               <div className={styles.cardBadge}>STEP 2</div>
               <h3>1인 전략 구조 설계</h3>
-              <p>수익 구조 설계</p>
               <ul>
+                <li>수익 구조 설계</li>
                 <li>실행 시스템 설계</li>
                 <li>루틴·성과 구조화</li>
               </ul>
@@ -290,8 +290,8 @@ export default function Home() {
               <div className={styles.expertiseIcon}>🤖</div>
               <div className={styles.cardBadge}>STEP 3</div>
               <h3>AI 자동화 시스템 설계</h3>
-              <p>AI 업무 자동화</p>
               <ul>
+                <li>AI 업무 자동화</li>
                 <li>콘텐츠 시스템화</li>
                 <li>생산성 확장 설계</li>
               </ul>
