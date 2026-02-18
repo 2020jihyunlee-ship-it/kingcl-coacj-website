@@ -115,7 +115,7 @@ export default function Home() {
             <p className={`${styles.heroDescription} reveal`}>
               20년간 10대의 진로와 학습을 설계해왔고,<br />
               지금은 그들이 20~30대가 되어<br />
-              AI 전환기 속에서 <strong>커리어 구조</strong>를 다시 설계하고 있습니다.
+              AI 전환기 속에서 그들의 부모 세대의 <strong>커리어</strong>까지 설계하고 있습니다.
             </p>
 
             <div className={`${styles.heroStats} reveal`}>
