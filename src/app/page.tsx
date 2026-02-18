@@ -423,11 +423,11 @@ export default function Home() {
                 </div>
               </a>
 
-              <a href="https://cafe.naver.com/youthhappyvirus" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
-                <span>☕</span>
+              <a href="https://kingcle-newsletter-tool.vercel.app" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+                <span>📩</span>
                 <div>
-                  <strong>카페</strong>
-                  <span>킹클 커뮤니티</span>
+                  <strong>뉴스레터 신청하기 (무료)</strong>
+                  <span>AI 시대 인사이트 구독</span>
                 </div>
               </a>
             </div>
