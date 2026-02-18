@@ -297,6 +297,32 @@ export default function Home() {
               </ul>
             </div>
           </div>
+
+          <div className="reveal" style={{ textAlign: 'center', marginTop: '48px' }}>
+            <a
+              href="https://ai-growth-map.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '10px',
+                padding: '18px 40px',
+                background: 'linear-gradient(135deg, #d4a537, #f5d576, #d4a537)',
+                color: '#1a1a2e',
+                fontSize: '17px',
+                fontWeight: 800,
+                borderRadius: '60px',
+                textDecoration: 'none',
+                boxShadow: '0 8px 32px rgba(212, 165, 55, 0.35), inset 0 1px 0 rgba(255,255,255,0.3)',
+                border: '1px solid rgba(245, 213, 118, 0.5)',
+                letterSpacing: '-0.3px',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              AI 1인 기업 성장 로드맵 바로가기 →
+            </a>
+          </div>
         </div>
       </section>
 
