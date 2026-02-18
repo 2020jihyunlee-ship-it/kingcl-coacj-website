@@ -253,19 +253,20 @@ export default function Home() {
 
           <div className={styles.expertiseGrid}>
             <div
-              className={`card ${styles.expertiseCard} reveal`}
+              className={`card ${styles.expertiseCard} ${styles.expertiseCardHighlight} reveal`}
               onMouseMove={handleCardTilt}
               onMouseLeave={resetCardTilt}
             >
               <div className={styles.spotlight}></div>
-              <div className={styles.expertiseIcon}>📚</div>
-              <h3>자기주도학습 코칭</h3>
-              <p>스스로 배우는 힘을 기르는 체계적인 학습 전략과 습관 설계</p>
+              <div className={styles.expertiseIcon}>🤖</div>
+              <h3>AI 전환기 전략 설계</h3>
+              <p>AI에게 일을 맡기고 인간은 가치와 성장에 집중하는 구조</p>
               <ul>
-                <li>학습 동기 부여</li>
-                <li>효율적 시간 관리</li>
-                <li>메타인지 전략</li>
+                <li>커리어·비즈니스 구조 재설계</li>
+                <li>AI 자동화 시스템 구축</li>
+                <li>1인 전략 실행 설계</li>
               </ul>
+              <div className={styles.cardBadge}>추천</div>
             </div>
 
             <div
@@ -301,20 +302,19 @@ export default function Home() {
             </div>
 
             <div
-              className={`card ${styles.expertiseCard} ${styles.expertiseCardHighlight} reveal`}
+              className={`card ${styles.expertiseCard} reveal`}
               onMouseMove={handleCardTilt}
               onMouseLeave={resetCardTilt}
             >
               <div className={styles.spotlight}></div>
-              <div className={styles.expertiseIcon}>🤖</div>
-              <h3>AI 전환기 전략 설계</h3>
-              <p>AI에게 일을 맡기고 인간은 가치와 성장에 집중하는 구조</p>
+              <div className={styles.expertiseIcon}>📚</div>
+              <h3>자기주도학습 코칭</h3>
+              <p>스스로 배우는 힘을 기르는 체계적인 학습 전략과 습관 설계</p>
               <ul>
-                <li>커리어·비즈니스 구조 재설계</li>
-                <li>AI 자동화 시스템 구축</li>
-                <li>1인 전략 실행 설계</li>
+                <li>학습 동기 부여</li>
+                <li>효율적 시간 관리</li>
+                <li>메타인지 전략</li>
               </ul>
-              <div className={styles.cardBadge}>NEW</div>
             </div>
           </div>
         </div>
