@@ -248,37 +248,20 @@ export default function Home() {
             전문 분야
           </h2>
 
-          <div className={styles.expertiseGrid}>
+          <div className={styles.expertiseGrid} style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
             <div
               className={`card ${styles.expertiseCard} ${styles.expertiseCardHighlight} reveal`}
               onMouseMove={handleCardTilt}
               onMouseLeave={resetCardTilt}
             >
               <div className={styles.spotlight}></div>
-              <div className={styles.expertiseIcon}>🤖</div>
-              <h3>AI 전환기 전략 설계</h3>
-              <p>AI에게 일을 맡기고 인간은 가치와 성장에 집중하는 구조</p>
-              <ul>
-                <li>커리어·비즈니스 구조 재설계</li>
-                <li>AI 자동화 시스템 구축</li>
-                <li>1인 전략 실행 설계</li>
-              </ul>
-              <div className={styles.cardBadge}>추천</div>
-            </div>
-
-            <div
-              className={`card ${styles.expertiseCard} reveal`}
-              onMouseMove={handleCardTilt}
-              onMouseLeave={resetCardTilt}
-            >
-              <div className={styles.spotlight}></div>
               <div className={styles.expertiseIcon}>🧭</div>
-              <h3>진로 설계 코칭</h3>
-              <p>자신만의 강점을 발견하고 미래를 설계하는 진로 탐색</p>
+              <div className={styles.cardBadge}>STEP 1</div>
+              <h3>AI 전환기 방향 설계</h3>
+              <p>성장 전략 진단</p>
               <ul>
-                <li>적성 및 강점 발견</li>
-                <li>미래 직업 탐색</li>
-                <li>로드맵 설계</li>
+                <li>커리어 재설계</li>
+                <li>성공 역량 정렬</li>
               </ul>
             </div>
 
@@ -288,13 +271,13 @@ export default function Home() {
               onMouseLeave={resetCardTilt}
             >
               <div className={styles.spotlight}></div>
-              <div className={styles.expertiseIcon}>🧠</div>
-              <h3>마인드셋 코칭</h3>
-              <p>성장하는 마인드로 변화하는 사고방식 혁신</p>
+              <div className={styles.expertiseIcon}>🏗️</div>
+              <div className={styles.cardBadge}>STEP 2</div>
+              <h3>1인 전략 구조 설계</h3>
+              <p>수익 구조 설계</p>
               <ul>
-                <li>성장형 마인드셋</li>
-                <li>자기효능감 강화</li>
-                <li>회복탄력성 향상</li>
+                <li>실행 시스템 설계</li>
+                <li>루틴·성과 구조화</li>
               </ul>
             </div>
 
@@ -304,13 +287,13 @@ export default function Home() {
               onMouseLeave={resetCardTilt}
             >
               <div className={styles.spotlight}></div>
-              <div className={styles.expertiseIcon}>📚</div>
-              <h3>자기주도학습 코칭</h3>
-              <p>스스로 배우는 힘을 기르는 체계적인 학습 전략과 습관 설계</p>
+              <div className={styles.expertiseIcon}>🤖</div>
+              <div className={styles.cardBadge}>STEP 3</div>
+              <h3>AI 자동화 시스템 설계</h3>
+              <p>AI 업무 자동화</p>
               <ul>
-                <li>학습 동기 부여</li>
-                <li>효율적 시간 관리</li>
-                <li>메타인지 전략</li>
+                <li>콘텐츠 시스템화</li>
+                <li>생산성 확장 설계</li>
               </ul>
             </div>
           </div>
