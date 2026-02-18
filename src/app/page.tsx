@@ -113,8 +113,9 @@ export default function Home() {
             </h1>
 
             <p className={`${styles.heroDescription} reveal`}>
-              20년간 <strong>20만 회</strong>의 코칭 경험으로<br />
-              AI 시대에 맞는 <strong>자기주도학습</strong>과 <strong>진로 설계</strong>를 이끕니다
+              20년간 10대의 사고를 설계해왔고,<br />
+              지금은 그들이 20~30대가 되어<br />
+              AI 전환기 속에서 <strong>커리어 구조</strong>를 다시 설계하고 있습니다.
             </p>
 
             <div className={`${styles.heroStats} reveal`}>
