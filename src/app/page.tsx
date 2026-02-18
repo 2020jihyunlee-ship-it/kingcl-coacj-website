@@ -307,12 +307,12 @@ export default function Home() {
             >
               <div className={styles.spotlight}></div>
               <div className={styles.expertiseIcon}>🤖</div>
-              <h3>AI 코칭 리더십</h3>
-              <p>AI 시대에 맞는 새로운 학습과 성장 전략</p>
+              <h3>AI 전환기 전략 설계</h3>
+              <p>AI에게 일을 맡기고 인간은 가치와 성장에 집중하는 구조</p>
               <ul>
-                <li>AI 활용 학습법</li>
-                <li>생성형 AI 활용</li>
-                <li>디지털 리터러시</li>
+                <li>커리어·비즈니스 구조 재설계</li>
+                <li>AI 자동화 시스템 구축</li>
+                <li>1인 전략 실행 설계</li>
               </ul>
               <div className={styles.cardBadge}>NEW</div>
             </div>
