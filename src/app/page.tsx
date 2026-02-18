@@ -201,18 +201,15 @@ export default function Home() {
 
               <p>
                 저는 AI와 코칭으로 사람의 성장을 설계하는 <strong>킹클코치 이지현</strong>입니다.
-                24년간 청소년과 성인들의 자기주도학습, 진로 설계, 마인드셋 코칭을 진행해왔습니다.
+                저는 20년간 한 세대의 학습·진로·마인드를 설계해왔고,
+                이제 그 경험을 기반으로 <strong>AI 시대에 맞는 커리어와 수익 구조</strong>를 설계합니다.
               </p>
 
               <p>
-                AI 시대가 도래하면서 교육의 패러다임은 완전히 바뀌고 있습니다.
+                AI 전환기는 단순한 기술 변화가 아니라
+                일의 구조와 성장 방식이 바뀌는 시대입니다.
                 이제 중요한 것은 무엇을 아느냐가 아니라,
-                <strong>어떻게 배우고 어떻게 성장할 것인가</strong>입니다.
-              </p>
-
-              <p>
-                킹클은 모든 사람이 자신만의 방식으로 배우고 성장하며,<br />
-                <strong>스스로의 삶을 설계할 수 있다</strong>고 믿습니다.
+                <strong>어떤 전략으로 성장 구조를 설계하느냐</strong>입니다.
               </p>
             </div>
 
@@ -225,7 +222,7 @@ export default function Home() {
                 <div className={styles.spotlight}></div>
                 <div className={styles.aboutCardIcon}>🎯</div>
                 <h4>Vision</h4>
-                <p>AI 시대에 맞는 새로운 교육 방법론으로<br />모든 이의 성장을 돕습니다</p>
+                <p>AI 시대에 맞는 새로운 성장 전략으로<br />개인이 스스로 커리어와 수익 구조를 설계하도록 돕습니다</p>
               </div>
 
               <div
@@ -236,7 +233,7 @@ export default function Home() {
                 <div className={styles.spotlight}></div>
                 <div className={styles.aboutCardIcon}>💡</div>
                 <h4>철학</h4>
-                <p>목표를 대신 정해주지 않는, 스스로 깨닫게 하는 코칭</p>
+                <p>답을 주는 코치가 아니라<br />스스로 전략을 설계할 수 있도록 돕는 코칭</p>
               </div>
             </div>
           </div>
