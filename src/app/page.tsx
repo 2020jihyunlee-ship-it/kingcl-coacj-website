@@ -361,7 +361,7 @@ export default function Home() {
               <div className={styles.achievementCategory}>
                 <h3>🎓 전문성 기반</h3>
                 <ul>
-                  <li>연세대학교 교육대학원 평생교육경영 석사</li>
+                  <li>연세대학교 교육대학원 평생교육경영 석사 과정</li>
                   <li>20년 이상 진로·학습·마인드 코칭</li>
                   <li>20,000회 이상 코칭 세션 진행</li>
                   <li>1,000개 이상 교육기관 프로그램 기획 및 보급</li>
