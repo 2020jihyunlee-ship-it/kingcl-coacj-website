@@ -383,7 +383,7 @@ export default function Home() {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/_VUg5mdUYHI?si=RZQiWe50ejvmzSws"
+                src="https://www.youtube.com/embed/4G6-xylxGLs?si=8AEznan9C3gCYeZ_"
                 title="AI 시대, 우리는 어떻게 배워야 할까요?"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
