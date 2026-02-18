@@ -338,38 +338,50 @@ export default function Home() {
           <div className={styles.achievementsTabs}>
             <div className={`${styles.achievementsContent} reveal`}>
               <div className={styles.achievementCategory}>
-                <h3>📺 방송 출연</h3>
+                <h3>📺 방송 및 공신력</h3>
                 <ul>
-                  <li>MBC &ldquo;공부가 머니?&rdquo; - 자기주도학습 전문가</li>
-                  <li>채널A &ldquo;티처스2 성적을 부탁해&rdquo; - 입시 코디네이터</li>
+                  <li>MBC 「공부가 머니?」 자기주도학습 전문가 패널 출연</li>
+                  <li>채널A 「티처스2 성적을 부탁해」 입시코디네이터 출연</li>
+                  <li>AI World Zoom Conference 연 4회 정기 포럼 메인 강사 지속 초청</li>
                 </ul>
               </div>
 
               <div className={styles.achievementCategory}>
-                <h3>📖 저서</h3>
+                <h3>📖 지식 자산 및 콘텐츠 설계</h3>
                 <ul>
-                  <li>&ldquo;언락킹드림&rdquo; (2023)</li>
-                  <li>&ldquo;생각디톡스 진로디톡스 학습디톡스&rdquo; (2023)</li>
-                  <li>외 13권</li>
+                  <li>『성공한 사람들은 이것부터 바꿨다』</li>
+                  <li>『생각디톡스 · 진로디톡스 · 학습디톡스』</li>
+                  <li>『언락킹드림』 외 13권 출간</li>
                 </ul>
+                <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '13px', marginTop: '12px', lineHeight: '1.6' }}>
+                  성장 구조를 언어화하고 실행 가능한 시스템으로 설계하는 콘텐츠 개발자
+                </p>
               </div>
 
               <div className={styles.achievementCategory}>
-                <h3>🎓 학력 및 자격</h3>
+                <h3>🎓 전문성 기반</h3>
                 <ul>
-                  <li>연세대학교 교육대학원 평생교육경영</li>
-                  <li>청소년 교육컨설팅, 상담코칭 20년</li>
+                  <li>연세대학교 교육대학원 평생교육경영 석사</li>
+                  <li>20년 이상 진로·학습·마인드 코칭</li>
+                  <li>20,000회 이상 코칭 세션 진행</li>
+                  <li>1,000개 이상 교육기관 프로그램 기획 및 보급</li>
                 </ul>
+                <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '13px', marginTop: '12px', lineHeight: '1.6' }}>
+                  코칭 데이터 기반 성장 설계 전문가
+                </p>
               </div>
 
               <div className={styles.achievementCategory}>
-                <h3>🏢 현재 활동</h3>
+                <h3>🚀 AI 전환기 전략 설계 활동</h3>
                 <ul>
                   <li>AI 코칭기업 킹클(KINGCL) 대표</li>
-                  <li>킹클코치TV 유튜브 채널 운영</li>
-                  <li>AI기반 자기주도학습 및 진로 청소년 코칭</li>
-                  <li>부모와 교사 등 AI활용 교육 강의 및 코칭</li>
+                  <li>AI Growth Map 설계자</li>
+                  <li>AI 기반 1인 전략 및 자동화 시스템 설계</li>
+                  <li>데이터 기반 커리어 및 비즈니스 구조 재설계</li>
                 </ul>
+                <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '13px', marginTop: '12px', lineHeight: '1.6' }}>
+                  AI에게 일을 맡기고, 인간은 가치와 성장에 집중하는 구조를 설계합니다.
+                </p>
               </div>
             </div>
           </div>
