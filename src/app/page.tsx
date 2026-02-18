@@ -211,6 +211,42 @@ export default function Home() {
                 이제 중요한 것은 무엇을 아느냐가 아니라,
                 <strong>어떤 전략으로 성장 구조를 설계하느냐</strong>입니다.
               </p>
+
+              <div style={{
+                display: 'flex',
+                gap: '0',
+                marginTop: '36px',
+                padding: '24px 0',
+                borderTop: '1px solid rgba(255,255,255,0.08)',
+                borderBottom: '1px solid rgba(255,255,255,0.08)',
+              }}>
+                {[
+                  { number: '20년', label: '코칭 경력' },
+                  { number: '13권', label: '출간 저서' },
+                  { number: '20만+', label: '코칭 횟수' },
+                ].map((stat, i) => (
+                  <div key={i} style={{
+                    flex: 1,
+                    textAlign: 'center',
+                    borderRight: i < 2 ? '1px solid rgba(255,255,255,0.08)' : 'none',
+                  }}>
+                    <div style={{
+                      fontSize: '24px',
+                      fontWeight: 900,
+                      background: 'linear-gradient(135deg, #d4a537, #f5d576)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      marginBottom: '4px',
+                    }}>{stat.number}</div>
+                    <div style={{
+                      fontSize: '12px',
+                      color: 'rgba(255,255,255,0.45)',
+                      fontWeight: 600,
+                      letterSpacing: '0.5px',
+                    }}>{stat.label}</div>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className={styles.aboutCards}>
