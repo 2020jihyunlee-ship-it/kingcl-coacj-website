@@ -433,7 +433,7 @@ export default function Home() {
             </div>
 
             <div className={styles.contactCta}>
-              <p>강연 및 컨설팅 문의</p>
+              <p>강의/컨설팅/비즈니스 문의</p>
               <a href="mailto:kingclcoach2026@gmail.com" className="btn btn-primary">
                 kingclcoach2026@gmail.com
               </a>
