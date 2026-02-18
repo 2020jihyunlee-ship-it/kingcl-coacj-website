@@ -104,11 +104,11 @@ export default function Home() {
         <div className={`container ${styles.heroContainer}`}>
           <div className={styles.heroContent}>
             <div className={`${styles.heroBadge} reveal`}>
-              <span>✨</span> AI 시대의 교육 혁신가
+              <span>✨</span> AI 전환기 성장 구조 설계자
             </div>
 
             <h1 className={`${styles.heroTitle} reveal`}>
-              <span className={styles.heroSubtitle}>AI 맞춤형 코칭 전문가</span>
+              <span className={styles.heroSubtitle}>AI에게 일을 맡기고, 인간은 가치에 집중하는 전략</span>
               킹클코치 <span className="text-gradient">이지현</span>
             </h1>
 
