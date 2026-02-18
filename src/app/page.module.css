@@ -319,10 +319,9 @@
 }
 
 .aboutContent {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: var(--space-3xl);
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
 }
 
 .aboutText {
@@ -346,8 +345,8 @@
 }
 
 .aboutCards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space-lg);
 }
 
@@ -787,6 +786,10 @@
   }
 
   .aboutContent {
+    flex-direction: column;
+  }
+
+  .aboutCards {
     grid-template-columns: 1fr;
   }
 
