@@ -375,7 +375,7 @@ export default function Home() {
                 <h3>🚀 AI 전환기 전략 설계 활동</h3>
                 <ul>
                   <li>AI 코칭기업 킹클(KINGCL) 대표</li>
-                  <li>AI Growth Map 설계자</li>
+                  <li>AI Growth Map 기획·개발자</li>
                   <li>AI 기반 1인 전략 및 자동화 시스템 설계</li>
                   <li>데이터 기반 커리어 및 비즈니스 구조 재설계</li>
                 </ul>

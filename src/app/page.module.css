@@ -884,6 +884,10 @@
   .achievementCategory {
     padding: var(--space-xl);
   }
+
+  .scrollIndicator {
+    display: none;
+  }
 }
 
 .main {
