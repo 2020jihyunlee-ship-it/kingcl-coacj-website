@@ -338,23 +338,15 @@ export default function Home() {
           <div className={styles.achievementsTabs}>
             <div className={`${styles.achievementsContent} reveal`}>
               <div className={styles.achievementCategory}>
-                <h3>📺 교육 및 활동 이력</h3>
+                <h3>🚀 AI 전환기 전략 설계 활동</h3>
                 <ul>
-                  <li>MBC 「공부가 머니?」 자기주도학습 전문가 패널 출연</li>
-                  <li>채널A 「티처스2 성적을 부탁해」 입시코디네이터 출연</li>
-                  <li>AI 리터러시 · 성장 구조 설계 강의 100회 이상</li>
-                </ul>
-              </div>
-
-              <div className={styles.achievementCategory}>
-                <h3>📖 지식 자산 및 콘텐츠 설계</h3>
-                <ul>
-                  <li>『성공한 사람들은 이것부터 바꿨다』</li>
-                  <li>『생각디톡스 · 진로디톡스 · 학습디톡스』</li>
-                  <li>『언락킹드림』 외 13권 출간</li>
+                  <li>AI 코칭기업 킹클(KINGCL) 대표</li>
+                  <li>AI Growth Map 기획·개발자</li>
+                  <li>AI 기반 1인 전략 및 자동화 시스템 설계</li>
+                  <li>데이터 기반 커리어 및 비즈니스 구조 재설계</li>
                 </ul>
                 <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '13px', marginTop: '12px', lineHeight: '1.6' }}>
-                  성장 구조를 언어화하고 실행 가능한 시스템으로 설계하는 콘텐츠 개발자
+                  AI에게 일을 맡기고, 인간은 가치와 성장에 집중하는 구조를 설계합니다.
                 </p>
               </div>
 
@@ -372,16 +364,24 @@ export default function Home() {
               </div>
 
               <div className={styles.achievementCategory}>
-                <h3>🚀 AI 전환기 전략 설계 활동</h3>
+                <h3>📖 지식 자산 및 콘텐츠 설계</h3>
                 <ul>
-                  <li>AI 코칭기업 킹클(KINGCL) 대표</li>
-                  <li>AI Growth Map 기획·개발자</li>
-                  <li>AI 기반 1인 전략 및 자동화 시스템 설계</li>
-                  <li>데이터 기반 커리어 및 비즈니스 구조 재설계</li>
+                  <li>『성공한 사람들은 이것부터 바꿨다』</li>
+                  <li>『생각디톡스 · 진로디톡스 · 학습디톡스』</li>
+                  <li>『언락킹드림』 외 13권 출간</li>
                 </ul>
                 <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '13px', marginTop: '12px', lineHeight: '1.6' }}>
-                  AI에게 일을 맡기고, 인간은 가치와 성장에 집중하는 구조를 설계합니다.
+                  성장 구조를 언어화하고 실행 가능한 시스템으로 설계하는 콘텐츠 개발자
                 </p>
+              </div>
+
+              <div className={styles.achievementCategory}>
+                <h3>📺 교육 및 활동 이력</h3>
+                <ul>
+                  <li>MBC 「공부가 머니?」 자기주도학습 전문가 패널 출연</li>
+                  <li>채널A 「티처스2 성적을 부탁해」 입시코디네이터 출연</li>
+                  <li>AI 리터러시 · 성장 구조 설계 강의 100회 이상</li>
+                </ul>
               </div>
             </div>
           </div>
