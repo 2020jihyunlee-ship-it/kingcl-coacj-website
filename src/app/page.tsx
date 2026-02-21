@@ -338,11 +338,11 @@ export default function Home() {
           <div className={styles.achievementsTabs}>
             <div className={`${styles.achievementsContent} reveal`}>
               <div className={styles.achievementCategory}>
-                <h3>📺 방송 및 공신력</h3>
+                <h3>📺 교육 및 활동 이력</h3>
                 <ul>
                   <li>MBC 「공부가 머니?」 자기주도학습 전문가 패널 출연</li>
                   <li>채널A 「티처스2 성적을 부탁해」 입시코디네이터 출연</li>
-                  <li>AI World Zoom Conference 연 4회 정기 포럼 메인 강사 지속 초청</li>
+                  <li>AI 리터러시 · 성장 구조 설계 강의 100회 이상</li>
                 </ul>
               </div>
 
