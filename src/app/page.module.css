@@ -407,7 +407,7 @@
 /* ===== Expertise Section ===== */
 .expertiseGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-xl);
 }
 
@@ -830,17 +830,42 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 120px;
+  }
+
   .navLinks {
     display: none;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+    word-break: keep-all;
+  }
+
+  .heroSubtitle {
+    font-size: 0.95rem;
+    word-break: keep-all;
+  }
+
+  .heroDescription {
+    font-size: 1rem;
+    word-break: keep-all;
   }
 
   .heroStats {
     flex-wrap: wrap;
     gap: var(--space-lg);
+    justify-content: center;
   }
 
   .statDivider {
     display: none;
+  }
+
+  .heroCta {
+    flex-direction: column;
+    align-items: center;
   }
 
   .expertiseGrid {
@@ -854,6 +879,10 @@
 
   .contactCard {
     padding: var(--space-2xl);
+  }
+
+  .achievementCategory {
+    padding: var(--space-xl);
   }
 }
 

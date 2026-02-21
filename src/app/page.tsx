@@ -249,7 +249,7 @@ export default function Home() {
             전문 분야
           </h2>
 
-          <div className={styles.expertiseGrid} style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
+          <div className={styles.expertiseGrid}>
             <div
               className={`card ${styles.expertiseCard} ${styles.expertiseCardHighlight} reveal`}
               onMouseMove={handleCardTilt}
