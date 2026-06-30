@@ -672,6 +672,42 @@
   margin-top: var(--space-2xl);
 }
 
+/* 활동 사진 갤러리 */
+.activityGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.activityItem {
+  margin: 0;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.activityItem:hover {
+  border-color: var(--color-border-gold);
+  transform: translateY(-4px);
+}
+
+.activityItem img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  display: block;
+}
+
+.activityItem figcaption {
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
 /* ===== Contact Section ===== */
 .contact {
   background: transparent;
@@ -830,6 +866,10 @@
 }
 
 @media (max-width: 768px) {
+  .activityGallery {
+    grid-template-columns: 1fr;
+  }
+
   .hero {
     padding-top: 120px;
   }

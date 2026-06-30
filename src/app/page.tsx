@@ -113,19 +113,19 @@ export default function Home() {
             </h1>
 
             <p className={`${styles.heroDescription} reveal`}>
-              저는 20년간 성장의 흐름을 설계해왔습니다.<br />
+              저는 22년간 성장의 흐름을 설계해왔습니다.<br />
               그리고 지금,<br />
               AI 전환기 속에서 <strong>커리어와 1인 전략</strong>을 다시 설계합니다.
             </p>
 
             <div className={`${styles.heroStats} reveal`}>
               <div className={styles.heroStat}>
-                <span className="stat-number">20</span>
+                <span className="stat-number">22</span>
                 <span>년 경력</span>
               </div>
               <div className={styles.statDivider}></div>
               <div className={styles.heroStat}>
-                <span className="stat-number">20만+</span>
+                <span className="stat-number">2만+</span>
                 <span>코칭 횟수</span>
               </div>
               <div className={styles.statDivider}></div>
@@ -201,7 +201,7 @@ export default function Home() {
 
               <p>
                 저는 AI와 코칭으로 사람의 성장을 설계하는 <strong>킹클코치 이지현</strong>입니다.
-                저는 20년간 한 세대의 학습·진로·마인드를 설계해왔고,
+                저는 22년간 한 세대의 학습·진로·마인드를 설계해왔고,
                 이제 그 경험을 기반으로 <strong>AI 시대에 맞는 커리어와 수익 구조</strong>를 설계합니다.
               </p>
 
@@ -354,7 +354,7 @@ export default function Home() {
                 <h3>🎓 전문성 기반</h3>
                 <ul>
                   <li>연세대학교 교육대학원 평생교육경영 석사 과정</li>
-                  <li>20년 이상 진로·학습·마인드 코칭</li>
+                  <li>22년 이상 진로·학습·마인드 코칭</li>
                   <li>20,000회 이상 코칭 세션 진행</li>
                   <li>1,000개 이상 교육기관 프로그램 기획 및 보급</li>
                 </ul>
@@ -412,8 +412,24 @@ export default function Home() {
             </div>
             <div className={styles.featuredVideoInfo}>
               <h3>코딩 몰라도 5분 만에 앱 개발? 인문학자가 AI로 &apos;1인 기업 시스템&apos;을 만드는 법 | 안티그래피 시연</h3>
-              <p>&ldquo;이제 기술이 아니라 &apos;사고력&apos;이 곧 자본인 시대입니다.&rdquo; 저는 개발자가 아닙니다. 인문학자이자 20년 차 코치입니다. 하지만 AI라는 강력한 파트너와 &apos;바이브 코딩(Vibe Coding)&apos;을 만나니, 제 머릿속 기획안이 단 5분 만에 살아 움직이는 앱으로 탄생했습니다...</p>
+              <p>&ldquo;이제 기술이 아니라 &apos;사고력&apos;이 곧 자본인 시대입니다.&rdquo; 저는 개발자가 아닙니다. 인문학자이자 22년 차 코치입니다. 하지만 AI라는 강력한 파트너와 &apos;바이브 코딩(Vibe Coding)&apos;을 만나니, 제 머릿속 기획안이 단 5분 만에 살아 움직이는 앱으로 탄생했습니다...</p>
             </div>
+          </div>
+
+          {/* 활동 사진 갤러리 */}
+          <div className={`${styles.activityGallery} reveal`}>
+            <figure className={styles.activityItem}>
+              <img src="/activity-lecture.jpg" alt="AI 시대 부모 강연" />
+              <figcaption>강연 · AI 시대 자녀교육</figcaption>
+            </figure>
+            <figure className={styles.activityItem}>
+              <img src="/activity-youtube.jpg" alt="유튜브 라이브 스튜디오" />
+              <figcaption>유튜브 · 킹클코치TV</figcaption>
+            </figure>
+            <figure className={styles.activityItem}>
+              <img src="/activity-tv.jpg" alt="채널A 티처스2 출연" />
+              <figcaption>방송 · 채널A 티처스2</figcaption>
+            </figure>
           </div>
 
           {/* More Videos Button */}
